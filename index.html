@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nguyễn Thị Kim Huệ — Marketing Executive · Portfolio</title>
+<meta name="description" content="Portfolio của Nguyễn Thị Kim Huệ — Marketing Executive (Full-stack): sáng tạo nội dung đa nền tảng, thiết kế hình ảnh, quay dựng video ngắn, vận hành social & website, booking KOL/KOC.">
+<meta name="author" content="Nguyễn Thị Kim Huệ">
+<meta name="theme-color" content="#FCFBF8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nguyễn Thị Kim Huệ — Marketing Executive · Portfolio">
+<meta property="og:description" content="Sáng tạo nội dung, kết nối thương hiệu — content, hình ảnh, video & vận hành kênh.">
+<meta property="og:image" content="assets/portrait.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FCFBF8'/%3E%3Ccircle cx='32' cy='32' r='20' fill='%23FF8E72'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='26' fill='%23fff' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:#FCFBF8;font-family:'Be Vietnam Pro',sans-serif;color:#4A3B35}
+  img{max-width:100%}
+  ::selection{background:#FF8E72;color:#fff}
+  a{color:inherit}
+  [data-hover]{transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease,box-shadow .25s ease,opacity .25s ease}
+  @keyframes ssfloat{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-16px) rotate(var(--r,0deg))}}
+  @keyframes ssmarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes ssspin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+  @keyframes ssblob{0%,100%{border-radius:62% 38% 46% 54%/56% 44% 56% 44%}50%{border-radius:42% 58% 64% 36%/44% 62% 38% 56%}}
+  @keyframes sspulse{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.45);opacity:0}}
+  /* language dropdown */
+  .lang-menu{opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .2s ease,visibility .2s}
+  .lang-wrap.open .lang-menu{opacity:1;visibility:visible;transform:translateY(0)}
+  /* responsive */
+  @media (max-width:980px){
+    .ss-hero{flex-direction:column;align-items:flex-start!important;gap:48px!important;padding-top:120px!important}
+    .ss-hero .hero-portrait{flex:0 0 auto!important;align-self:center}
+    .ss-about{grid-template-columns:1fr!important;gap:40px!important}
+    .ss-contact-grid{grid-template-columns:1fr!important;gap:28px!important}
+    .ss-work-cols{columns:2!important}
+  }
+  @media (max-width:760px){
+    .ss-navlinks{display:none!important}
+    .ss-work-cols{columns:1!important}
+    .ss-stats{grid-template-columns:1fr 1fr!important}
+  }
+  @media (max-width:480px){
+    .hero-portrait .blob{width:280px!important;height:340px!important}
+    .ss-float{display:none!important}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms!important;animation-iteration-count:1!important}
+    html{scroll-behavior:auto}
+  }
+  noscript .ns{max-width:640px;margin:120px auto;padding:0 24px;text-align:center;font-size:18px;line-height:1.6;color:#6b574e}
+</style>
+</head>
+<body>
+<noscript><div class="ns"><h1 style="font-family:'Lora',serif;color:#4A3B35">Nguyễn Thị Kim Huệ</h1><p>Marketing Executive · Portfolio. This portfolio needs JavaScript enabled to display its galleries and interactions.</p><p>Liên hệ: <a href="tel:0898087662">0898 087 662</a> · <a href="mailto:kimhuesp12@gmail.com">kimhuesp12@gmail.com</a></p></div></noscript>
+
+<div id="ss-root" style="overflow-x:hidden;position:relative">
+  <div id="main"></div>
+
+  <!-- Lumi: cute flying companion + quick nav (persistent) -->
+  <div id="ss-lumi-wrap" style="position:fixed;left:0;top:0;z-index:90;pointer-events:none;will-change:transform">
+    <div id="ss-lumi-menu" style="position:absolute;bottom:84px;left:50%;transform:translate(-50%,12px) scale(.9);transform-origin:bottom center;opacity:0;visibility:hidden;transition:opacity .28s ease,transform .28s cubic-bezier(.2,.8,.2,1);pointer-events:none;display:flex;flex-direction:column;gap:8px;width:188px">
+      <div style="background:#fff;border-radius:18px;padding:10px;box-shadow:0 18px 44px -16px rgba(74,59,53,.5);border:1px solid rgba(74,59,53,.08)">
+        <div id="ss-lumi-golabel" style="font-family:'Lora',serif;font-size:14px;color:#4A3B35;padding:4px 10px 8px;border-bottom:1px solid rgba(74,59,53,.08);margin-bottom:6px"></div>
+        <div id="ss-lumi-navlist"></div>
+      </div>
+    </div>
+    <div id="ss-lumi" title="Bấm vào mình nhé!" style="position:absolute;left:0;top:0;width:70px;height:70px;cursor:pointer;pointer-events:auto;margin-left:-35px;margin-top:-35px">
+      <div id="ss-lumi-body" style="position:absolute;inset:0;border-radius:54% 46% 50% 50%/58% 58% 42% 42%;background:radial-gradient(circle at 36% 30%,#fff6,#FFB8A0 55%,#FF8E72);box-shadow:0 12px 28px -8px rgba(255,142,114,.85),inset 0 -6px 12px -4px rgba(214,98,70,.5);transition:transform .25s cubic-bezier(.2,.8,.2,1)">
+        <span style="position:absolute;top:-9px;left:50%;transform:translateX(-50%);font-size:15px">✦</span>
+        <div style="position:absolute;top:30px;left:0;right:0;display:flex;justify-content:center;gap:11px">
+          <span style="width:11px;height:13px;background:#4A3B35;border-radius:50%;display:block;position:relative;overflow:hidden"><span class="ss-pupil" style="position:absolute;width:5px;height:5px;background:#fff;border-radius:50%;top:2px;left:3px;transition:transform .12s linear"></span></span>
+          <span style="width:11px;height:13px;background:#4A3B35;border-radius:50%;display:block;position:relative;overflow:hidden"><span class="ss-pupil" style="position:absolute;width:5px;height:5px;background:#fff;border-radius:50%;top:2px;left:3px;transition:transform .12s linear"></span></span>
+        </div>
+        <div id="ss-lumi-mouth" style="position:absolute;top:47px;left:50%;transform:translateX(-50%);width:13px;height:7px;border:2px solid #4A3B35;border-top:0;border-radius:0 0 13px 13px;transition:all .25s"></div>
+        <span style="position:absolute;top:42px;left:9px;width:8px;height:8px;background:#FF7D7D;opacity:.5;border-radius:50%"></span>
+        <span style="position:absolute;top:42px;right:9px;width:8px;height:8px;background:#FF7D7D;opacity:.5;border-radius:50%"></span>
+      </div>
+      <span id="ss-lumi-hint" style="position:absolute;top:50%;right:78px;transform:translateY(-50%);white-space:nowrap;background:#4A3B35;color:#FCFBF8;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;font-weight:600;padding:6px 12px;border-radius:14px;opacity:.92;transition:opacity .3s"></span>
+    </div>
+  </div>
+
+  <div id="lb-root"></div>
+  <div id="zalo-root"></div>
+</div>
+
+<script>
+"use strict";
+(function(){
+  // ---------- state ----------
+  var state = { lang: 'vi', openCat: null, sending: false, sent: false };
+
+  var GFORM = {
+    action: 'https://docs.google.com/forms/d/e/1FAIpQLSfsbVobM7ZxfYTkD3MhIyv6rU56H5mzErTayE3wJTq9D-NURQ/formResponse',
+    name: 'entry.261033940',
+    contact: 'entry.2078430272',
+    msg: 'entry.8702140'
+  };
+
+  function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+  // ---------- data (port of renderVals) ----------
+  function getData(){
+    var vi = state.lang !== 'en';
+    function t(v,e){ return vi ? v : e; }
+
+    var rawCats = [
+      { title: t('Nội dung đa nền tảng','Multi-platform Content'), en:'Multi-platform Content', icon:'💬', tint:'#FFD9CE', h:'170px', desc: t('Vận hành & sáng tạo nội dung đa nền tảng: Facebook, Instagram, TikTok, Zalo OA & Website.','Creating & running content across platforms: Facebook, Instagram, TikTok, Zalo OA & Website.'), images:['assets/cfb-1.jpeg','assets/cfb-2.jpeg','assets/cfb-3.jpg','assets/cfb-4.jpg','assets/cfb-5.jpeg','assets/cfb-6.jpeg','assets/cfb-7.jpeg','assets/cfb-8.jpeg','assets/cfb-11.jpeg','assets/cfb-12.jpeg','assets/cfb-13.jpeg','assets/cfb-14.jpeg','assets/cfb-15.jpeg','assets/cfb-16.jpeg'] },
+      { title: t('Broadcast Zalo OA','Zalo OA Broadcast'), en:'Weekly Broadcast', icon:'📢', tint:'#D6EBDC', h:'180px', desc: t('Soạn & gửi bài broadcast đến khách hàng theo từng tuần qua Zalo OA — chăm sóc, nhắc lịch và giữ tương tác đều đặn.','Writing & sending weekly broadcasts to customers via Zalo OA — nurturing, reminders and steady engagement.'), images:['assets/zalo-1.jpeg','assets/zalo-2.jpeg','assets/zalo-3.jpeg'] },
+      { title: t('Chương trình khuyến mãi','Promotions'), en:'Promotions', icon:'🎁', tint:'#E3D6F5', h:'220px', desc: t('Lên ý tưởng & triển khai campaign khuyến mãi, minigame thu hút khách hàng.','Ideating & running promotion campaigns and minigames to attract customers.'), images:['assets/ctkm-1.jpeg','assets/ctkm-2.jpeg','assets/ctkm-3.jpeg','assets/ctkm-4.jpeg'] },
+      { title: t('Chăm sóc & quản lý Website','Website Care & Management'), en:'Website Management', icon:'🖥️', tint:'#D6EBDC', h:'150px', desc: t('Chăm sóc website, viết blog chuẩn SEO và quản lý đơn hàng sản phẩm cùng lịch dịch vụ được đặt.','Maintaining the website, writing SEO blogs and managing product orders & booked service schedules.'), images:['assets/website-landing.jpg','assets/blog-1.jpeg','assets/blog-2.png','assets/blog-3.png','assets/blog-4.jpeg'] },
+      { title: t('Poster · Banner · Menu','Poster · Banner · Menu'), en:'Graphic Design', icon:'🎨', tint:'#FBEFC2', h:'210px', desc: t('Thiết kế ấn phẩm: poster, banner, ảnh bìa, menu phục vụ truyền thông & điểm bán.','Designing collateral: posters, banners, covers and menus for marketing & point of sale.'), images:['assets/poster-1.jpeg','assets/poster-2.jpg','assets/poster-3.jpg'] },
+      { title: t('Booking KOL / KOC','Booking KOL / KOC'), en:'Influencer', icon:'🤝', tint:'#FFD9CE', h:'160px', desc: t('Tìm kiếm, booking & làm việc với KOL/KOC: kịch bản, nội dung, theo dõi hiệu quả.','Finding, booking & working with KOL/KOC: scripts, content and performance tracking.'), images:[], videos:[
+        { isTt:true, isFb:false, src:'https://www.tiktok.com/embed/v2/7625260316045249812' },
+        { isTt:true, isFb:false, src:'https://www.tiktok.com/embed/v2/7630098896965897480' },
+        { isTt:true, isFb:false, src:'https://www.tiktok.com/embed/v2/7629698172264238356' },
+        { isTt:false, isFb:false, isIg:true, src:'https://www.instagram.com/reel/DX_r9Vyx7iX/embed/' }
+      ] }
+    ];
+
+    var showreelVideos = [
+      { isTt:true, isFb:false, src:'https://www.tiktok.com/embed/v2/7631816031308156168' },
+      { isTt:true, isFb:false, src:'https://www.tiktok.com/embed/v2/7574034290573348116' },
+      { isTt:true, isFb:false, src:'https://www.tiktok.com/embed/v2/7633325129778416914' },
+      { isTt:true, isFb:false, src:'https://www.tiktok.com/embed/v2/7631445370014305543' },
+      { isTt:false, isFb:true, hasPoster:true, poster:'assets/fb-reel-1.jpg', href:'https://www.facebook.com/reel/973587085071601' },
+      { isTt:false, isFb:true, hasPoster:true, poster:'assets/fb-reel-2.jpg', href:'https://www.facebook.com/reel/854900986918669' }
+    ];
+
+    var cats = rawCats.map(function(c,i){
+      var vids = c.videos || [];
+      var nImg = c.images.length, nVid = vids.length;
+      var hasMedia = nImg > 0 || nVid > 0;
+      return Object.assign({}, c, {
+        idx: i,
+        hasImages: nImg > 0,
+        hasVideos: nImg === 0 && nVid > 0,
+        noImages: !hasMedia,
+        cover: c.images[0] || null,
+        countLabel: nVid > 0 ? (nVid + (vi ? ' video' : (nVid>1?' videos':' video'))) : (nImg + (vi ? ' ảnh' : (nImg>1?' photos':' photo'))),
+        cursor: hasMedia ? 'pointer' : 'default',
+        hasMedia: hasMedia
+      });
+    });
+
+    return {
+      _raw: rawCats,
+      navLinks: [
+        { label: t('Về tôi','About'), href:'#about' },
+        { label: t('Kinh nghiệm','Experience'), href:'#experience' },
+        { label: t('Lĩnh vực','Work'), href:'#work' },
+        { label: t('Video','Video'), href:'#video' }
+      ],
+      marquee: vi
+        ? ['Content Writing','Quay dựng & edit video ngắn','Thiết kế hình ảnh: Canva & AI','Vận hành Social & Website','Chăm sóc khách hàng','Sử dụng AI: Claude, ChatGPT, Gemini','Booking KOL/KOC']
+        : ['Content Writing','Filming & editing short videos','Image design: Canva & AI','Social & Website operations','Customer care','Using AI: Claude, ChatGPT, Gemini','Booking KOL/KOC'],
+      skills: vi
+        ? ['Content Writing','Quay dựng & edit video ngắn','Thiết kế hình ảnh: Canva & AI','Vận hành Social & Website','Chăm sóc khách hàng','Sử dụng AI: Claude, ChatGPT, Gemini']
+        : ['Content Writing','Filming & editing short videos','Image design: Canva & AI','Social & Website operations','Customer care','Using AI: Claude, ChatGPT, Gemini'],
+      stats: [
+        { num:1, suffix:'+', label: t('Năm kinh nghiệm Marketing','Year of Marketing experience'), tint:'#FFD9CE' },
+        { num:5, suffix:'', label: t('Nền tảng nội dung','Content platforms'), tint:'#E3D6F5' },
+        { num:6, suffix:'', label: t('Lĩnh vực chuyên môn','Areas of expertise'), tint:'#D6EBDC' },
+        { num:30, suffix:'+', label: t('Dự án booking KOL/KOC','KOL/KOC booking projects'), tint:'#FBEFC2' }
+      ],
+      experiences: [
+        {
+          role:'Marketing Executive (Full-stack)',
+          company: t('CÔNG TY TNHH TRAKY VIỆT NAM','TRAKY VIETNAM CO., LTD'),
+          period:'07/2025 – 05/2026',
+          points: vi ? [
+            'Lên chương trình Marketing & Content Plan theo tháng/quý cho các nền tảng social.',
+            'Viết content đa dạng: bài quảng cáo, SEO, truyền thông thương hiệu.',
+            'Quản lý & vận hành hệ thống kênh social media, theo dõi và tối ưu hiệu quả nội dung.',
+            'Thiết kế hình ảnh, video truyền thông: banner, poster, short video…',
+            'Quay dựng video, chụp hình thực tế tại salon phục vụ branding & social.',
+            'Booking & làm việc với KOC/KOL: trao đổi nội dung, kịch bản, theo dõi hiệu quả.',
+            'Chăm sóc khách hàng trên TikTok, Instagram, Fanpage, Zalo OA.'
+          ] : [
+            'Built monthly/quarterly Marketing & Content Plans for social platforms.',
+            'Wrote diverse content: ads, SEO and brand communications.',
+            'Managed & ran social media channels, tracking and optimizing content performance.',
+            'Designed visuals & marketing videos: banners, posters, short videos…',
+            'Filmed videos & shot real photos at the salon for branding & social.',
+            'Booked & worked with KOC/KOL: content, scripts and performance tracking.',
+            'Cared for customers on TikTok, Instagram, Fanpage and Zalo OA.'
+          ]
+        },
+        {
+          role:'Sales Assistant',
+          company: t('CÔNG TY TNHH THỰC PHẨM TỐT LÀNH & CP PHÂN PHỐI MOËT HENNESSY VN','TOT LANH FOODS CO., LTD & MOËT HENNESSY VIETNAM'),
+          period:'02/2024 – 03/2025',
+          points: vi ? [
+            'Giới thiệu & tư vấn sản phẩm, chăm sóc khách hàng tại điểm bán.',
+            'Hỗ trợ bộ phận kinh doanh: thu thập feedback khách hàng, truyền đạt thông điệp sản phẩm.'
+          ] : [
+            'Introduced & advised on products, cared for customers at point of sale.',
+            'Supported the sales team: gathered customer feedback and conveyed product messages.'
+          ]
+        },
+        {
+          role:'Supervisor',
+          company: t('Dự án: Bigigo – Chuyến xe "Hàn" rong','Project: Bigigo – The "Korean" Street Cart'),
+          period:'08/2023 – 11/2023',
+          points: vi ? [
+            'Tham gia hoạt động truyền thông cho thương hiệu BIGIGO & CJ FOOD.',
+            'Tư vấn sản phẩm, hỗ trợ bán hàng & tổ chức minigame thu hút khách hàng.'
+          ] : [
+            'Joined communications activities for BIGIGO & CJ FOOD.',
+            'Advised on products, supported sales & ran minigames to attract customers.'
+          ]
+        }
+      ],
+      categories: cats,
+      showreelVideos: showreelVideos,
+      lumiNav: [
+        { icon:'⬆', label: t('Đầu trang','Top'), href:'#hero' },
+        { icon:'🌸', label: t('Về tôi','About'), href:'#about' },
+        { icon:'🗂', label: t('Kinh nghiệm','Experience'), href:'#experience' },
+        { icon:'🎨', label: t('Lĩnh vực','Work'), href:'#work' },
+        { icon:'🎬', label: t('Video','Video'), href:'#video' }
+      ],
+      lumiGoLabel: t('Đi tới ✦','Go to ✦'),
+      lumiHint: t('Bấm vào mình nhé! ✦','Click me! ✦'),
+      langLabel: vi ? 'VI' : 'EN',
+      navContact: t('Liên hệ ngay','Get in touch'),
+      heroDescPre: t('Mình kể chuyện thương hiệu bằng ','I tell brand stories through '),
+      heroDescStrong: t('nội dung, hình ảnh & video','content, visuals & video'),
+      heroDescPost: t(' — từ ý tưởng đến vận hành kênh, biến sự sáng tạo thành hiệu quả kinh doanh thật.',' — from idea to channel operations, turning creativity into real business results.'),
+      heroBadge: t('Marketing Executive · Full-stack','Marketing Executive · Full-stack'),
+      heroCtaWork: t('Xem dự án của tôi →','View my work →'),
+      heroCtaVideo: t('▶ Xem showreel','▶ Watch showreel'),
+      lblSocial: t('📱 Chăm sóc kênh social','📱 Social channel care'),
+      lblDesign: t('🎨 Sáng tạo nội dung','🎨 Content creation'),
+      lblBooking: t('🤝 Booking KOL/KOC','🤝 Booking KOL/KOC'),
+      lblConsult: t('💬 Tư vấn khách hàng','💬 Customer consulting'),
+      aboutKicker: t('About / Về tôi','About'),
+      aboutH2: t('Sáng tạo nội dung, kết nối thương hiệu.','Creating content, connecting brands.'),
+      aboutP1: t('Mình là nhân viên Marketing với kinh nghiệm triển khai nội dung đa nền tảng, thiết kế hình ảnh, hỗ trợ quay dựng & edit các video ngắn và quản lý các kênh truyền thông (social, website).','I am a Marketing executive experienced in multi-platform content, image design, supporting the filming & editing of short videos, and managing communication channels (social, website).'),
+      aboutP2: t('Từng đảm nhiệm vai trò Sales Assistant nên mình hiểu rõ hành vi khách hàng và tối ưu nội dung bán hàng. Tổ chức công việc tốt, chủ động và chỉn chu — luôn hướng tới việc phát triển thương hiệu và hiệu quả kinh doanh.','Having worked as a Sales Assistant, I understand customer behavior and optimize sales content. Organized, proactive and meticulous — always aiming to grow the brand and drive business results.'),
+      eduSchool: t('🎓 ĐH Công Nghiệp TP.HCM','🎓 Industrial University of HCMC'),
+      skillsHeading: t('Bộ kỹ năng','My skills'),
+      expKicker: t('Experience / Kinh nghiệm','Experience'),
+      expH2: t('Hành trình phát triển','My growth journey'),
+      workKicker: t('Work / Lĩnh vực','Work'),
+      workH2: t('Những gì mình làm','What I do'),
+      workIntro: t('Dưới đây là những công việc mình đã trực tiếp thực hiện — kèm theo hình ảnh, video & sản phẩm thực tế.','Below are the tasks I have directly worked on — with real photos, videos & deliverables.'),
+      photosSoon: t('Hình sẽ cập nhật','Photos coming soon'),
+      viewGallery: t('Xem bộ sưu tập →','View gallery →'),
+      videoKicker: t('Showreel / Video','Showreel / Video'),
+      videoH2: t('Video mình đã tham gia','Videos I worked on'),
+      videoIntro: t('Mình tham gia hỗ trợ quay dựng, góp ý kịch bản và review bản dựng cuối — để mỗi video lên sóng đều chỉn chu và đúng tinh thần thương hiệu.','I help with filming, contribute to scripts and review the final cut — so every published video feels polished and on-brand.'),
+      contactKicker: t('Contact / Liên hệ','Contact'),
+      contactH2: t('Cùng làm điều gì đó hay ho?',"Let's make something great?"),
+      contactIntro: t('Mình luôn sẵn sàng cho dự án mới — content, thiết kế, video hay vận hành kênh.',"I'm always ready for a new project — content, design, video or channel operations."),
+      phoneLabel: t('Điện thoại','Phone'),
+      phName: t('Tên của bạn','Your name'),
+      phContact: t('Email / SĐT','Email / Phone'),
+      phMsg: t('Lời nhắn của bạn...','Your message...'),
+      galleryKicker: t('Bộ sưu tập','Gallery'),
+      closeLabel: t('✕ Đóng','✕ Close'),
+      zaloCaption: t('Mở Zalo → quét mã QR này để kết bạn với mình nhé ✦','Open Zalo → scan this QR code to connect with me ✦'),
+      footerNote: t('Cảm ơn bạn đã ghé thăm portfolio của mình — chúc bạn một ngày thật vui! ✦','Thanks for visiting my portfolio — have a wonderful day! ✦'),
+      submitLabel: state.sent ? t('Đã gửi, cảm ơn bạn! ✦','Sent — thank you! ✦') : (state.sending ? t('Đang gửi…','Sending…') : t('Gửi lời nhắn ✦','Send message ✦'))
+    };
+  }
+
+  // ---------- markup helpers ----------
+  function imgFallback(){ return "this.onerror=null;this.style.display='none';var w=this.closest('[data-imgwrap]');if(w){w.style.minHeight='200px';w.style.background='linear-gradient(150deg,#FFD9CE,#E3D6F5)';}"; }
+
+  function navHTML(D){
+    var links = D.navLinks.map(function(n){
+      return '<a href="'+esc(n.href)+'" style="text-decoration:none;color:#4A3B35;font-size:15px;font-weight:500;opacity:.8" data-hover="opacity:1;color:#FF8E72">'+esc(n.label)+'</a>';
+    }).join('');
+    return ''
+    + '<nav style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 7vw;background:rgba(252,251,248,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(74,59,53,.07)">'
+    +   '<a href="#hero" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#4A3B35">'
+    +     '<span style="width:34px;height:34px;border-radius:50%;background:#FF8E72;display:flex;align-items:center;justify-content:center;color:#fff;font-family:\'Lora\',serif;font-size:18px">H</span>'
+    +     '<span style="font-family:\'Lora\',serif;font-size:20px;white-space:nowrap">Kim Huệ</span>'
+    +   '</a>'
+    +   '<div style="display:flex;align-items:center;gap:26px">'
+    +     '<div class="ss-navlinks" style="display:flex;align-items:center;gap:26px">'+links+'</div>'
+    +     '<a href="#contact" style="text-decoration:none;background:#4A3B35;color:#FCFBF8;padding:11px 22px;border-radius:30px;font-size:14px;font-weight:600;white-space:nowrap" data-hover="background:#FF8E72">'+esc(D.navContact)+'</a>'
+    +     '<div class="lang-wrap" style="position:relative">'
+    +       '<button data-action="toggleLang" style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid rgba(74,59,53,.16);color:#4A3B35;padding:9px 14px;border-radius:30px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.04em" data-hover="border-color:#FF8E72;color:#FF8E72">🌐 '+esc(D.langLabel)+' ▾</button>'
+    +       '<div class="lang-menu" style="position:absolute;top:46px;right:0;background:#fff;border:1px solid rgba(74,59,53,.1);border-radius:14px;padding:6px;box-shadow:0 18px 40px -16px rgba(74,59,53,.45);display:flex;flex-direction:column;gap:2px;min-width:138px;z-index:60">'
+    +         '<button data-action="pickLang" data-lang="vi" style="display:flex;align-items:center;gap:8px;border:none;background:transparent;padding:9px 12px;border-radius:10px;font-size:14px;font-weight:600;color:#4A3B35;cursor:pointer;font-family:inherit;text-align:left" data-hover="background:#FCFBF8;color:#FF8E72">🇻🇳 Tiếng Việt</button>'
+    +         '<button data-action="pickLang" data-lang="en" style="display:flex;align-items:center;gap:8px;border:none;background:transparent;padding:9px 12px;border-radius:10px;font-size:14px;font-weight:600;color:#4A3B35;cursor:pointer;font-family:inherit;text-align:left" data-hover="background:#FCFBF8;color:#FF8E72">🇬🇧 English</button>'
+    +       '</div>'
+    +     '</div>'
+    +   '</div>'
+    + '</nav>';
+  }
+
+  function heroHTML(D){
+    return ''
+    + '<section id="hero" class="ss-hero" style="position:relative;min-height:var(--app-vh,100vh);display:flex;align-items:center;padding:140px 7vw 80px;gap:60px">'
+    +   '<div data-parallax="0.10" style="position:absolute;top:14%;right:8%;width:340px;height:340px;background:#C7B5E8;opacity:.55;filter:blur(2px);animation:ssblob 14s ease-in-out infinite;z-index:0"></div>'
+    +   '<div data-parallax="0.22" style="position:absolute;bottom:8%;left:4%;width:200px;height:200px;border-radius:50%;background:#FCE3A0;opacity:.6;z-index:0"></div>'
+    +   '<div data-parallax="-0.12" style="position:absolute;top:30%;left:48%;width:120px;height:120px;border-radius:50%;background:#9FC9AE;opacity:.5;z-index:0"></div>'
+    +   '<div style="position:relative;z-index:2;flex:1;max-width:620px">'
+    +     '<div data-reveal style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(74,59,53,.1);padding:8px 16px;border-radius:30px;font-size:13px;font-weight:600;letter-spacing:.04em;margin-bottom:26px">'
+    +       '<span style="width:8px;height:8px;border-radius:50%;background:#9FC9AE;display:inline-block"></span>'+esc(D.heroBadge)
+    +     '</div>'
+    +     '<h1 data-reveal data-delay="80" style="font-family:\'Lora\',serif;font-size:clamp(48px,6.6vw,92px);line-height:1.02;font-weight:400;letter-spacing:-.01em;margin-bottom:24px">Nguyễn Thị<br><span style="font-style:italic;color:#FF8E72">Kim Huệ</span></h1>'
+    +     '<p data-reveal data-delay="160" style="font-size:19px;line-height:1.65;color:#6b574e;max-width:500px;margin-bottom:36px">'+esc(D.heroDescPre)+'<strong style="color:#4A3B35;font-weight:700">'+esc(D.heroDescStrong)+'</strong>'+esc(D.heroDescPost)+'</p>'
+    +     '<div data-reveal data-delay="240" style="display:flex;gap:16px;flex-wrap:wrap">'
+    +       '<a href="#work" style="text-decoration:none;background:#FF8E72;color:#fff;padding:16px 30px;border-radius:32px;font-weight:600;font-size:16px;box-shadow:0 14px 30px -10px rgba(255,142,114,.7)" data-hover="transform:translateY(-3px)">'+esc(D.heroCtaWork)+'</a>'
+    +       '<a href="#video" style="text-decoration:none;background:#fff;color:#4A3B35;padding:16px 30px;border-radius:32px;font-weight:600;font-size:16px;border:1px solid rgba(74,59,53,.14)" data-hover="border-color:#FF8E72;color:#FF8E72">'+esc(D.heroCtaVideo)+'</a>'
+    +     '</div>'
+    +   '</div>'
+    +   '<div class="hero-portrait" style="position:relative;z-index:2;flex:0 0 380px;display:flex;justify-content:center">'
+    +     '<div style="position:relative">'
+    +       '<div class="blob" data-imgwrap style="width:360px;height:440px;background:linear-gradient(160deg,#FFC9C9,#C7B5E8);border-radius:48% 52% 56% 44%/60% 56% 44% 40%;animation:ssblob 16s ease-in-out infinite;overflow:hidden;box-shadow:0 30px 60px -20px rgba(199,181,232,.8)">'
+    +         '<img src="assets/portrait.jpg" alt="Nguyễn Thị Kim Huệ" onerror="'+imgFallback()+'" style="width:100%;height:100%;object-fit:cover;object-position:center 28%" />'
+    +       '</div>'
+    +       '<div class="ss-float" style="--r:-8deg;position:absolute;top:-18px;left:-34px;background:#fff;padding:10px 16px;border-radius:16px;font-size:13px;font-weight:600;box-shadow:0 10px 24px -8px rgba(74,59,53,.25);animation:ssfloat 5s ease-in-out infinite">'+esc(D.lblSocial)+'</div>'
+    +       '<div class="ss-float" style="--r:6deg;position:absolute;bottom:-30px;right:74px;background:#fff;padding:10px 16px;border-radius:16px;font-size:13px;font-weight:600;box-shadow:0 10px 24px -8px rgba(74,59,53,.25);animation:ssfloat 6s ease-in-out infinite .6s">'+esc(D.lblDesign)+'</div>'
+    +       '<div class="ss-float" style="--r:10deg;position:absolute;bottom:60px;left:-58px;background:#FCE3A0;padding:10px 16px;border-radius:16px;font-size:13px;font-weight:600;box-shadow:0 10px 24px -8px rgba(74,59,53,.2);animation:ssfloat 5.5s ease-in-out infinite .3s">'+esc(D.lblBooking)+'</div>'
+    +       '<div class="ss-float" style="--r:-5deg;position:absolute;top:130px;right:-52px;background:#D6EBDC;padding:10px 16px;border-radius:16px;font-size:13px;font-weight:600;box-shadow:0 10px 24px -8px rgba(74,59,53,.2);animation:ssfloat 6.5s ease-in-out infinite .9s">'+esc(D.lblConsult)+'</div>'
+    +     '</div>'
+    +   '</div>'
+    + '</section>';
+  }
+
+  function marqueeHTML(D){
+    var run = D.marquee.map(function(m){
+      return '<span style="font-family:\'Lora\',serif;font-size:30px;padding:0 34px;display:inline-flex;align-items:center;gap:34px">'+esc(m)+'<span style="color:#FF8E72">✦</span></span>';
+    }).join('');
+    return ''
+    + '<div style="background:#4A3B35;color:#FCFBF8;padding:22px 0;overflow:hidden;white-space:nowrap">'
+    +   '<div style="display:inline-flex;animation:ssmarquee 26s linear infinite">'
+    +     '<span style="display:inline-flex">'+run+'</span>'
+    +     '<span style="display:inline-flex" aria-hidden="true">'+run+'</span>'
+    +   '</div>'
+    + '</div>';
+  }
+
+  function aboutHTML(D){
+    var stats = D.stats.map(function(s){
+      return '<div style="background:'+esc(s.tint)+';border-radius:24px;padding:30px 26px">'
+        + '<div style="font-family:\'Lora\',serif;font-size:54px;line-height:1;color:#4A3B35"><span data-count="'+s.num+'">0</span>'+esc(s.suffix)+'</div>'
+        + '<div style="margin-top:10px;font-size:14px;font-weight:500;color:#5c4a42;line-height:1.4">'+esc(s.label)+'</div>'
+        + '</div>';
+    }).join('');
+    return ''
+    + '<section id="about" style="padding:120px 7vw;position:relative">'
+    +   '<div class="ss-about" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">'
+    +     '<div data-reveal>'
+    +       '<span style="font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#FF8E72">'+esc(D.aboutKicker)+'</span>'
+    +       '<h2 style="font-family:\'Lora\',serif;font-size:clamp(34px,4vw,52px);line-height:1.1;margin:16px 0 24px">'+esc(D.aboutH2)+'</h2>'
+    +       '<p style="font-size:17px;line-height:1.75;color:#6b574e;margin-bottom:18px">'+esc(D.aboutP1)+'</p>'
+    +       '<p style="font-size:17px;line-height:1.75;color:#6b574e">'+esc(D.aboutP2)+'</p>'
+    +       '<div style="margin-top:32px;display:inline-flex;align-items:center;gap:18px;background:#fff;border:1px solid rgba(74,59,53,.1);padding:16px 22px;border-radius:18px;flex-wrap:wrap">'
+    +         '<span style="font-family:\'Lora\',serif;font-size:15px">'+esc(D.eduSchool)+'</span>'
+    +         '<span style="width:1px;height:28px;background:rgba(74,59,53,.12)"></span>'
+    +         '<span style="font-size:14px;color:#6b574e">GPA <b style="color:#4A3B35">3.35</b>/4.0</span>'
+    +       '</div>'
+    +     '</div>'
+    +     '<div class="ss-stats" data-reveal data-delay="120" style="display:grid;grid-template-columns:1fr 1fr;gap:18px">'+stats+'</div>'
+    +   '</div>'
+    + '</section>';
+  }
+
+  function skillsHTML(D){
+    var chips = D.skills.map(function(sk){
+      return '<span style="background:#fff;border:1px solid rgba(74,59,53,.12);padding:13px 22px;border-radius:30px;font-size:15px;font-weight:600;color:#4A3B35" data-hover="background:#FF8E72;color:#fff;border-color:#FF8E72;transform:translateY(-2px)">'+esc(sk)+'</span>';
+    }).join('');
+    return ''
+    + '<section style="padding:0 7vw 110px">'
+    +   '<div style="max-width:1100px;margin:0 auto" data-reveal>'
+    +     '<h3 style="font-family:\'Lora\',serif;font-size:26px;margin-bottom:22px;text-align:center;color:#4A3B35">'+esc(D.skillsHeading)+' <span style="font-style:italic;color:#FF8E72">/ skills</span></h3>'
+    +     '<div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">'+chips+'</div>'
+    +   '</div>'
+    + '</section>';
+  }
+
+  function expHTML(D){
+    var items = D.experiences.map(function(exp){
+      var pts = exp.points.map(function(pt){
+        return '<li style="font-size:15px;line-height:1.55;color:#6b574e;padding-left:22px;position:relative"><span style="position:absolute;left:0;color:#9FC9AE">▹</span>'+esc(pt)+'</li>';
+      }).join('');
+      return '<div data-reveal style="position:relative;margin-bottom:40px">'
+        + '<span style="position:absolute;left:-39px;top:6px;width:18px;height:18px;border-radius:50%;background:#FF8E72;border:4px solid #F4EFE7"></span>'
+        + '<div style="background:#fff;border-radius:22px;padding:30px 32px;box-shadow:0 16px 40px -24px rgba(74,59,53,.4)">'
+        +   '<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">'
+        +     '<h3 style="font-family:\'Lora\',serif;font-size:26px;color:#4A3B35">'+esc(exp.role)+'</h3>'
+        +     '<span style="font-size:13px;font-weight:600;color:#fff;background:#C7B5E8;padding:6px 14px;border-radius:20px">'+esc(exp.period)+'</span>'
+        +   '</div>'
+        +   '<div style="font-size:15px;font-weight:600;color:#FF8E72;margin-bottom:16px">'+esc(exp.company)+'</div>'
+        +   '<ul style="list-style:none;display:flex;flex-direction:column;gap:9px">'+pts+'</ul>'
+        + '</div>'
+        + '</div>';
+    }).join('');
+    return ''
+    + '<section id="experience" style="padding:110px 7vw;background:#F4EFE7">'
+    +   '<div style="max-width:980px;margin:0 auto">'
+    +     '<div data-reveal style="text-align:center;margin-bottom:64px">'
+    +       '<span style="font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#FF8E72">'+esc(D.expKicker)+'</span>'
+    +       '<h2 style="font-family:\'Lora\',serif;font-size:clamp(34px,4.4vw,56px);margin-top:14px">'+esc(D.expH2)+'</h2>'
+    +     '</div>'
+    +     '<div style="position:relative;padding-left:40px">'
+    +       '<div style="position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(#FF8E72,#C7B5E8)"></div>'
+    +       items
+    +     '</div>'
+    +   '</div>'
+    + '</section>';
+  }
+
+  function workHTML(D){
+    var cards = D.categories.map(function(c){
+      var media;
+      if(c.hasImages){
+        media = '<div data-imgwrap style="position:relative;overflow:hidden">'
+          + '<img src="'+esc(c.cover)+'" alt="'+esc(c.title)+'" onerror="'+imgFallback()+'" style="display:block;width:100%;height:auto" />'
+          + '<span style="position:absolute;top:14px;right:14px;background:rgba(255,255,255,.92);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 6px 14px -6px rgba(74,59,53,.5)">'+esc(c.icon)+'</span>'
+          + '<span style="position:absolute;bottom:14px;left:14px;background:rgba(74,59,53,.84);color:#fff;font-size:12px;font-weight:600;padding:6px 13px;border-radius:20px">⦿ '+esc(c.countLabel)+'</span>'
+          + '</div>';
+      } else if(c.hasVideos){
+        media = '<div style="height:230px;background:linear-gradient(150deg,#FFD6CB,#C7B5E8 70%,#B49FE0);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;position:relative;overflow:hidden">'
+          + '<span style="position:absolute;top:-26px;left:-26px;width:96px;height:96px;border-radius:50%;background:rgba(255,255,255,.18)"></span>'
+          + '<span style="position:absolute;bottom:-30px;right:18px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.14)"></span>'
+          + '<span style="position:absolute;top:24px;right:54px;font-size:13px;color:rgba(255,255,255,.7)">✦</span>'
+          + '<span style="position:absolute;bottom:34px;left:30px;font-size:16px;color:rgba(255,255,255,.6)">✧</span>'
+          + '<span style="position:absolute;top:14px;right:14px;background:rgba(255,255,255,.95);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 6px 14px -6px rgba(74,59,53,.5)">'+esc(c.icon)+'</span>'
+          + '<span style="position:relative;display:flex;align-items:center;justify-content:center">'
+          +   '<span style="position:absolute;width:84px;height:84px;border-radius:50%;border:2px solid rgba(255,255,255,.55);animation:sspulse 2.4s ease-out infinite"></span>'
+          +   '<span style="width:66px;height:66px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;color:#FF8E72;padding-left:5px;box-shadow:0 12px 28px -10px rgba(74,59,53,.7)">▶</span>'
+          + '</span>'
+          + '<span style="background:rgba(74,59,53,.86);color:#fff;font-size:12.5px;font-weight:600;padding:7px 15px;border-radius:20px;letter-spacing:.02em">⦿ '+esc(c.countLabel)+'</span>'
+          + '</div>';
+      } else {
+        media = '<div style="height:'+esc(c.h)+';background:'+esc(c.tint)+';display:flex;align-items:flex-end;justify-content:flex-start;padding:18px;position:relative">'
+          + '<span style="position:absolute;top:16px;right:16px;background:rgba(255,255,255,.85);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px">'+esc(c.icon)+'</span>'
+          + '<span style="background:rgba(255,255,255,.78);font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;color:#5c4a42">'+esc(D.photosSoon)+'</span>'
+          + '</div>';
+      }
+      var gallery = c.hasImages ? '<div style="margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#FF8E72">'+esc(D.viewGallery)+'</div>' : '';
+      var actionAttr = c.hasMedia ? ' data-action="openCat" data-cat="'+c.idx+'"' : '';
+      return '<div data-reveal'+actionAttr+' style="break-inside:avoid;margin-bottom:22px;background:#fff;border-radius:24px;overflow:hidden;border:1px solid rgba(74,59,53,.08);box-shadow:0 14px 38px -26px rgba(74,59,53,.5);cursor:'+c.cursor+'" data-hover="transform:translateY(-6px);box-shadow:0 24px 48px -24px rgba(74,59,53,.55)">'
+        + media
+        + '<div style="padding:22px 24px 26px">'
+        +   '<div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#FF8E72;margin-bottom:7px">'+esc(c.en)+'</div>'
+        +   '<h3 style="font-family:\'Lora\',serif;font-size:23px;line-height:1.2;margin-bottom:10px;color:#4A3B35">'+esc(c.title)+'</h3>'
+        +   '<p style="font-size:14.5px;line-height:1.6;color:#6b574e">'+esc(c.desc)+'</p>'
+        +   gallery
+        + '</div>'
+        + '</div>';
+    }).join('');
+    return ''
+    + '<section id="work" style="padding:120px 7vw">'
+    +   '<div style="max-width:1180px;margin:0 auto">'
+    +     '<div data-reveal style="margin-bottom:54px;max-width:640px">'
+    +       '<span style="font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#FF8E72">'+esc(D.workKicker)+'</span>'
+    +       '<h2 style="font-family:\'Lora\',serif;font-size:clamp(34px,4.4vw,56px);margin:14px 0 16px">'+esc(D.workH2)+'</h2>'
+    +       '<p style="font-size:17px;line-height:1.7;color:#6b574e">'+esc(D.workIntro)+'</p>'
+    +     '</div>'
+    +     '<div class="ss-work-cols" style="columns:3;column-gap:22px">'+cards+'</div>'
+    +   '</div>'
+    + '</section>';
+  }
+
+  function videoCardHTML(v){
+    if(v.isTt){
+      return '<div data-reveal style="aspect-ratio:9/16;background:#3a2e2a;border-radius:24px;overflow:hidden;border:1px solid rgba(252,251,248,.12)">'
+        + '<iframe src="'+esc(v.src)+'" allow="autoplay;encrypted-media;fullscreen" allowfullscreen="true" scrolling="no" loading="lazy" style="width:100%;height:100%;border:0;display:block"></iframe>'
+        + '</div>';
+    }
+    if(v.isFb){
+      var poster = v.hasPoster ? '<img src="'+esc(v.poster)+'" alt="Facebook reel" onerror="this.style.display=\'none\'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /><span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.05) 35%,rgba(0,0,0,.45))"></span>' : '';
+      return '<a data-reveal href="'+esc(v.href)+'" target="_blank" rel="noopener" style="aspect-ratio:9/16;background:linear-gradient(160deg,#3b5a9a,#2a3f6e);border-radius:24px;overflow:hidden;border:1px solid rgba(252,251,248,.12);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-decoration:none;position:relative" data-hover="transform:translateY(-4px)">'
+        + poster
+        + '<span style="position:absolute;top:16px;left:16px;z-index:2;font-size:12px;font-weight:700;letter-spacing:.04em;color:#fff;background:rgba(0,0,0,.3);padding:5px 11px;border-radius:14px">Facebook Reel</span>'
+        + '<span style="position:relative;z-index:2;width:70px;height:70px;border-radius:50%;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;font-size:26px;color:#3b5a9a;box-shadow:0 10px 26px -8px rgba(0,0,0,.5)">▶</span>'
+        + '<span style="position:relative;z-index:2;font-size:12.5px;font-weight:600;color:#fff;background:rgba(0,0,0,.32);padding:7px 16px;border-radius:20px">Xem trên Facebook ↗</span>'
+        + '</a>';
+    }
+    return '';
+  }
+
+  function videoHTML(D){
+    var grid = D.showreelVideos.map(videoCardHTML).join('');
+    return ''
+    + '<section id="video" style="padding:110px 7vw;background:#4A3B35;color:#FCFBF8">'
+    +   '<div style="max-width:1180px;margin:0 auto">'
+    +     '<div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:48px">'
+    +       '<div>'
+    +         '<span style="font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#FF8E72">'+esc(D.videoKicker)+'</span>'
+    +         '<h2 style="font-family:\'Lora\',serif;font-size:clamp(34px,4.4vw,56px);margin-top:14px">'+esc(D.videoH2)+'</h2>'
+    +       '</div>'
+    +       '<p style="max-width:380px;font-size:15px;line-height:1.65;color:rgba(252,251,248,.75)">'+esc(D.videoIntro)+'</p>'
+    +     '</div>'
+    +     '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;align-items:start">'+grid+'</div>'
+    +   '</div>'
+    + '</section>';
+  }
+
+  function contactHTML(D){
+    return ''
+    + '<section id="contact" style="padding:120px 7vw">'
+    +   '<div style="max-width:1000px;margin:0 auto;background:linear-gradient(150deg,#FFC9C9,#C7B5E8);border-radius:36px;padding:64px clamp(28px,5vw,72px);position:relative;overflow:hidden">'
+    +     '<div data-parallax="0.06" style="position:absolute;top:-40px;right:-30px;width:180px;height:180px;border-radius:50%;background:#FCE3A0;opacity:.7"></div>'
+    +     '<div data-reveal style="position:relative;z-index:2;text-align:center;margin-bottom:40px">'
+    +       '<span style="font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff">'+esc(D.contactKicker)+'</span>'
+    +       '<h2 style="font-family:\'Lora\',serif;font-size:clamp(36px,5vw,60px);margin:14px 0 12px;color:#4A3B35">'+esc(D.contactH2)+'</h2>'
+    +       '<p style="font-size:17px;color:#5c4a42">'+esc(D.contactIntro)+'</p>'
+    +     '</div>'
+    +     '<div class="ss-contact-grid" style="position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center">'
+    +       '<div data-reveal style="display:flex;flex-direction:column;gap:16px">'
+    +         '<a href="tel:0898087662" style="text-decoration:none;display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.92);padding:18px 22px;border-radius:18px" data-hover="transform:translateX(4px)"><span style="font-size:22px">📞</span><span><span style="display:block;font-size:12px;color:#6b574e">'+esc(D.phoneLabel)+'</span><b style="color:#4A3B35;font-size:17px">0898 087 662</b></span></a>'
+    +         '<a href="mailto:kimhuesp12@gmail.com" style="text-decoration:none;display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.92);padding:18px 22px;border-radius:18px" data-hover="transform:translateX(4px)"><span style="font-size:22px">✉️</span><span><span style="display:block;font-size:12px;color:#6b574e">Email</span><b style="color:#4A3B35;font-size:17px">kimhuesp12@gmail.com</b></span></a>'
+    +         '<div style="display:flex;gap:12px;margin-top:6px;flex-wrap:wrap">'
+    +           '<a href="https://www.facebook.com/nguyenthi.kimhue.754" target="_blank" rel="noopener" style="text-decoration:none;background:rgba(255,255,255,.92);padding:11px 18px;border-radius:30px;font-size:13px;font-weight:600;color:#4A3B35" data-hover="background:#4A3B35;color:#fff">Facebook</a>'
+    +           '<a href="https://www.instagram.com/oimilk_/?hl=en" target="_blank" rel="noopener" style="text-decoration:none;background:rgba(255,255,255,.92);padding:11px 18px;border-radius:30px;font-size:13px;font-weight:600;color:#4A3B35" data-hover="background:#4A3B35;color:#fff">Instagram</a>'
+    +           '<span data-action="openZalo" style="background:rgba(255,255,255,.92);padding:11px 18px;border-radius:30px;font-size:13px;font-weight:600;color:#4A3B35;cursor:pointer" data-hover="background:#4A3B35;color:#fff">Zalo</span>'
+    +         '</div>'
+    +       '</div>'
+    +       '<form id="ss-form" data-reveal data-delay="120" style="display:flex;flex-direction:column;gap:12px">'
+    +         '<input name="fName" placeholder="'+esc(D.phName)+'" style="border:none;background:rgba(255,255,255,.92);padding:15px 18px;border-radius:14px;font-size:15px;font-family:inherit;color:#4A3B35;outline:none">'
+    +         '<input name="fContact" placeholder="'+esc(D.phContact)+'" style="border:none;background:rgba(255,255,255,.92);padding:15px 18px;border-radius:14px;font-size:15px;font-family:inherit;color:#4A3B35;outline:none">'
+    +         '<textarea name="fMsg" placeholder="'+esc(D.phMsg)+'" rows="3" style="border:none;background:rgba(255,255,255,.92);padding:15px 18px;border-radius:14px;font-size:15px;font-family:inherit;color:#4A3B35;outline:none;resize:none"></textarea>'
+    +         '<button id="ss-submit" type="submit" style="border:none;background:#4A3B35;color:#FCFBF8;padding:16px;border-radius:14px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit" data-hover="background:#FF8E72">'+esc(D.submitLabel)+'</button>'
+    +       '</form>'
+    +     '</div>'
+    +   '</div>'
+    + '</section>';
+  }
+
+  function footerHTML(D){
+    return '<footer style="padding:40px 7vw;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;border-top:1px solid rgba(74,59,53,.08)">'
+      + '<span style="font-family:\'Lora\',serif;font-size:18px;color:#4A3B35">Nguyễn Thị Kim Huệ</span>'
+      + '<span style="font-size:13px;color:#6b574e">'+esc(D.footerNote)+'</span>'
+      + '</footer>';
+  }
+
+  // ---------- render main ----------
+  var D = null;
+  function renderMain(){
+    D = getData();
+    var html = navHTML(D)+heroHTML(D)+marqueeHTML(D)+aboutHTML(D)+skillsHTML(D)+expHTML(D)+workHTML(D)+videoHTML(D)+contactHTML(D)+footerHTML(D);
+    document.getElementById('main').innerHTML = html;
+    document.documentElement.lang = state.lang;
+    renderLumiText();
+    bindForm();
+    initMotion();
+  }
+
+  function renderLumiText(){
+    document.getElementById('ss-lumi-golabel').textContent = D.lumiGoLabel;
+    document.getElementById('ss-lumi-hint').textContent = D.lumiHint;
+    document.getElementById('ss-lumi-navlist').innerHTML = D.lumiNav.map(function(ln){
+      return '<a href="'+esc(ln.href)+'" data-action="lumiGo" style="display:flex;align-items:center;gap:10px;width:100%;text-align:left;text-decoration:none;border:none;background:transparent;padding:9px 10px;border-radius:12px;font-family:\'Be Vietnam Pro\',sans-serif;font-size:14px;font-weight:600;color:#4A3B35;cursor:pointer" data-hover="background:#FCFBF8;color:#FF8E72"><span style="font-size:15px">'+esc(ln.icon)+'</span>'+esc(ln.label)+'</a>';
+    }).join('');
+  }
+
+  // ---------- lightbox ----------
+  function openLightbox(catIndex){
+    state.openCat = catIndex;
+    var cat = D._raw[catIndex];
+    if(!cat) return;
+    var imgs = cat.images || [];
+    var vids = cat.videos || [];
+    var inner;
+    if(vids.length > 0){
+      inner = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px">' + vids.map(function(v){
+        if(v.isTt) return '<div style="background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.16);border-radius:18px;overflow:hidden;aspect-ratio:9/16"><iframe src="'+esc(v.src)+'" allow="autoplay;encrypted-media;fullscreen" allowfullscreen="true" scrolling="no" loading="lazy" style="width:100%;height:100%;border:0;display:block"></iframe></div>';
+        if(v.isFb) return '<a href="'+esc(v.href)+'" target="_blank" rel="noopener" style="aspect-ratio:9/16;background:linear-gradient(160deg,#3b5a9a,#2a3f6e);border-radius:18px;border:1px solid rgba(255,255,255,.16);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-decoration:none" data-hover="transform:translateY(-4px)"><span style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;font-size:24px;color:#3b5a9a">▶</span><span style="font-size:13px;font-weight:600;color:#fff">Facebook Reel ↗</span></a>';
+        if(v.isIg) return '<div style="background:#fff;border:1px solid rgba(255,255,255,.16);border-radius:18px;overflow:hidden;height:620px"><iframe src="'+esc(v.src)+'" allow="autoplay;encrypted-media;fullscreen" allowfullscreen="true" scrolling="no" loading="lazy" style="width:100%;height:100%;border:0;display:block"></iframe></div>';
+        return '';
+      }).join('') + '</div>';
+    } else {
+      var pairs = [];
+      for(var i=0;i<imgs.length;i+=2){ pairs.push([imgs[i], imgs[i+1]||null]); }
+      inner = '<div style="display:flex;flex-direction:column;gap:26px">' + pairs.map(function(p){
+        var b = p[1] ? '<img src="'+esc(p[1])+'" onerror="'+imgFallback()+'" style="display:block;width:100%;border-radius:12px;box-shadow:0 18px 40px -20px rgba(0,0,0,.55)" />' : '';
+        return '<div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:18px"><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start"><img src="'+esc(p[0])+'" onerror="'+imgFallback()+'" style="display:block;width:100%;border-radius:12px;box-shadow:0 18px 40px -20px rgba(0,0,0,.55)" />'+b+'</div></div>';
+      }).join('') + '</div>';
+    }
+    var root = document.getElementById('lb-root');
+    root.innerHTML = '<div id="lb-backdrop" style="position:fixed;inset:0;z-index:100;background:rgba(58,46,42,.74);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);overflow-y:auto;padding:36px 5vw">'
+      + '<div style="max-width:1060px;margin:0 auto">'
+      +   '<div style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:26px">'
+      +     '<div><div style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#FF8E72">'+esc(D.galleryKicker)+'</div><h3 style="font-family:\'Lora\',serif;color:#fff;font-size:clamp(24px,3vw,36px);margin-top:4px">'+esc(cat.title)+'</h3></div>'
+      +     '<button data-action="closeLightbox" style="border:none;background:#FF8E72;color:#fff;font-weight:700;font-size:14px;padding:12px 22px;border-radius:30px;cursor:pointer;white-space:nowrap;font-family:inherit" data-hover="background:#fff;color:#FF8E72">'+esc(D.closeLabel)+'</button>'
+      +   '</div>'
+      +   inner
+      + '</div>'
+      + '</div>';
+    document.body.style.overflow = 'hidden';
+    var bd = document.getElementById('lb-backdrop');
+    bd.addEventListener('click', function(e){ if(e.target === bd) closeLightbox(); });
+  }
+  function closeLightbox(){ state.openCat = null; document.getElementById('lb-root').innerHTML=''; document.body.style.overflow=''; }
+
+  // ---------- zalo ----------
+  function openZalo(){
+    var root = document.getElementById('zalo-root');
+    root.innerHTML = '<div id="zalo-backdrop" style="position:fixed;inset:0;z-index:120;background:rgba(58,46,42,.74);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);display:flex;align-items:center;justify-content:center;padding:24px">'
+      + '<div style="background:#fff;border-radius:26px;padding:14px;max-width:340px;width:100%;box-shadow:0 30px 70px -24px rgba(0,0,0,.6);position:relative">'
+      +   '<button data-action="closeZalo" style="position:absolute;top:-14px;right:-14px;z-index:2;border:none;width:38px;height:38px;border-radius:50%;background:#FF8E72;color:#fff;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 8px 18px -6px rgba(0,0,0,.4)">✕</button>'
+      +   '<img src="assets/zalo-qr.png" alt="Mã QR Zalo Nguyễn Thị Kim Huệ" onerror="this.style.display=\'none\'" style="display:block;width:100%;border-radius:16px" />'
+      +   '<p style="text-align:center;font-family:\'Be Vietnam Pro\',sans-serif;font-size:13.5px;color:#6b574e;padding:12px 8px 6px">'+esc(D.zaloCaption)+'</p>'
+      + '</div>'
+      + '</div>';
+    document.body.style.overflow='hidden';
+    var bd = document.getElementById('zalo-backdrop');
+    bd.addEventListener('click', function(e){ if(e.target===bd) closeZalo(); });
+  }
+  function closeZalo(){ document.getElementById('zalo-root').innerHTML=''; document.body.style.overflow=''; }
+
+  // ---------- form ----------
+  function bindForm(){
+    var form = document.getElementById('ss-form');
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if(state.sending) return;
+      state.sending = true;
+      updateSubmitLabel();
+      var fd = new FormData();
+      fd.append(GFORM.name, form.fName.value);
+      fd.append(GFORM.contact, form.fContact.value);
+      fd.append(GFORM.msg, form.fMsg.value);
+      fetch(GFORM.action, { method:'POST', mode:'no-cors', body: fd })
+        .catch(function(){})
+        .finally(function(){
+          state.sending = false; state.sent = true;
+          form.reset();
+          updateSubmitLabel();
+          setTimeout(function(){ state.sent = false; updateSubmitLabel(); }, 4000);
+        });
+    });
+  }
+  function updateSubmitLabel(){
+    var btn = document.getElementById('ss-submit');
+    if(btn){ D = getData(); btn.textContent = D.submitLabel; }
+  }
+
+  // ---------- hover (port of style-hover) ----------
+  function parseDecls(s){
+    return s.split(';').map(function(x){return x.trim();}).filter(Boolean).map(function(d){
+      var i = d.indexOf(':'); return [d.slice(0,i).trim(), d.slice(i+1).trim()];
+    });
+  }
+  document.addEventListener('mouseover', function(e){
+    var el = e.target.closest && e.target.closest('[data-hover]');
+    if(!el || el._hov) return;
+    el._hov = true; el._hovPrev = {};
+    parseDecls(el.getAttribute('data-hover')).forEach(function(d){
+      el._hovPrev[d[0]] = el.style.getPropertyValue(d[0]);
+      el.style.setProperty(d[0], d[1]);
+    });
+  });
+  document.addEventListener('mouseout', function(e){
+    var el = e.target.closest && e.target.closest('[data-hover]');
+    if(!el || !el._hov) return;
+    if(e.relatedTarget && el.contains(e.relatedTarget)) return;
+    for(var p in el._hovPrev){ el.style.setProperty(p, el._hovPrev[p]); }
+    el._hov = false;
+  });
+
+  // ---------- click actions (delegated) ----------
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('[data-action]');
+    if(!a) return;
+    var act = a.getAttribute('data-action');
+    if(act === 'toggleLang'){ e.preventDefault(); e.stopPropagation(); var w=a.closest('.lang-wrap'); if(w) w.classList.toggle('open'); return; }
+    if(act === 'pickLang'){ e.preventDefault(); e.stopPropagation(); var lang=a.getAttribute('data-lang'); if(lang!==state.lang){ state.lang=lang; renderMain(); } else { var w2=a.closest('.lang-wrap'); if(w2) w2.classList.remove('open'); } return; }
+    if(act === 'openCat'){ e.preventDefault(); openLightbox(parseInt(a.getAttribute('data-cat'),10)); return; }
+    if(act === 'closeLightbox'){ e.preventDefault(); closeLightbox(); return; }
+    if(act === 'openZalo'){ e.preventDefault(); openZalo(); return; }
+    if(act === 'closeZalo'){ e.preventDefault(); closeZalo(); return; }
+    if(act === 'lumiGo'){ lumiClose(); return; } // allow anchor default (jump to section)
+  });
+  // close lang dropdown on outside click
+  document.addEventListener('click', function(e){
+    if(e.target.closest && e.target.closest('.lang-wrap')) return;
+    var w = document.querySelector('.lang-wrap.open'); if(w) w.classList.remove('open');
+  });
+  // Esc closes overlays
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeLightbox(); closeZalo(); } });
+
+  // ---------- motion: reveal / count / parallax (lifted from componentDidMount) ----------
+  var revealIO = null, countIO = null;
+  function initMotion(){
+    var root = document.getElementById('main');
+    if(!root) return;
+    if(revealIO) revealIO.disconnect();
+    if(countIO) countIO.disconnect();
+
+    revealIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.style.opacity='1'; en.target.style.transform='none'; revealIO.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    root.querySelectorAll('[data-reveal]').forEach(function(el){
+      el.style.opacity='0'; el.style.transform='translateY(30px)';
+      el.style.transition='opacity .75s cubic-bezier(.2,.7,.2,1), transform .75s cubic-bezier(.2,.7,.2,1)';
+      el.style.transitionDelay=(el.dataset.delay||0)+'ms';
+    });
+    requestAnimationFrame(function(){
+      root.querySelectorAll('[data-reveal]').forEach(function(el){
+        var r = el.getBoundingClientRect();
+        if(r.top < window.innerHeight*0.95){ el.style.opacity='1'; el.style.transform='none'; }
+        else revealIO.observe(el);
+      });
+    });
+
+    countIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var el = en.target, target = parseFloat(el.dataset.count)||0, dur=1500, t0=performance.now();
+        var tick = function(t){ var p=Math.min(1,(t-t0)/dur); el.textContent=Math.floor(target*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(tick); else el.textContent=target; };
+        requestAnimationFrame(tick); countIO.unobserve(el);
+      });
+    }, { threshold: 0.6 });
+    root.querySelectorAll('[data-count]').forEach(function(el){ countIO.observe(el); });
+  }
+
+  // single persistent parallax scroll handler (queries current DOM)
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    var els = document.querySelectorAll('#main [data-parallax]');
+    for(var i=0;i<els.length;i++){ els[i].style.transform = 'translateY('+(y*parseFloat(els[i].dataset.parallax))+'px)'; }
+  }, { passive:true });
+
+  // ---------- Lumi (lifted, init once) ----------
+  var lumiClose = function(){};
+  function initLumi(){
+    var wrap = document.getElementById('ss-lumi-wrap');
+    var lumi = document.getElementById('ss-lumi');
+    var menu = document.getElementById('ss-lumi-menu');
+    if(!wrap || !lumi) return;
+    var body = document.getElementById('ss-lumi-body');
+    var mouth = document.getElementById('ss-lumi-mouth');
+    var hint = document.getElementById('ss-lumi-hint');
+    var pupils = lumi.querySelectorAll('.ss-pupil');
+    var menuOpen = false;
+    var anchor = function(){ var z=window.__zoom||1; return { x: window.innerWidth/z - 78, y: window.innerHeight/z - 92 }; };
+    var t=0, scrollVel=0, bob=0, lastY=0, curX=0, curY=0;
+    var mouseX = window.innerWidth/(window.__zoom||1), mouseY = window.innerHeight/(window.__zoom||1);
+
+    lumiClose = function(){ setTimeout(function(){ setMenu(false); }, 60); };
+    function setMenu(open){
+      menuOpen = open;
+      if(!menu) return;
+      menu.style.opacity = open?'1':'0';
+      menu.style.visibility = open?'visible':'hidden';
+      menu.style.pointerEvents = open?'auto':'none';
+      menu.style.transform = open?'translate(-50%,0) scale(1)':'translate(-50%,12px) scale(.9)';
+      if(hint) hint.style.opacity = open?'0':'.92';
+    }
+    function loop(){
+      var a = anchor(), x, y;
+      if(menuOpen){ x=a.x; y=a.y; wrap.style.transform='translate('+x+'px,'+y+'px)'; }
+      else {
+        t += 0.018; scrollVel *= 0.9; bob += (scrollVel-bob)*0.12;
+        var R=26; x=a.x+Math.cos(t)*R; y=a.y+Math.sin(t*1.7)*(R*0.62)-bob*0.5;
+        wrap.style.transform='translate('+x+'px,'+y+'px)';
+      }
+      curX=x; curY=y;
+      var dx=mouseX-x, dy=mouseY-y, dist=Math.hypot(dx,dy), ang=Math.atan2(dy,dx);
+      var mp=Math.min(2.6, dist/70);
+      pupils.forEach(function(p){ p.style.transform='translate('+(Math.cos(ang)*mp)+'px,'+(Math.sin(ang)*mp)+'px)'; });
+      var near = dist<200 || menuOpen;
+      if(body) body.style.transform = near?'scale(1.1)':'scale(1)';
+      if(mouth){ mouth.style.width=near?'17px':'13px'; mouth.style.height=near?'9px':'7px'; }
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+    window.addEventListener('mousemove', function(e){ var z=window.__zoom||1; mouseX=e.clientX/z; mouseY=e.clientY/z; }, { passive:true });
+    setTimeout(function(){ if(hint && !menuOpen) hint.style.opacity='0'; }, 4500);
+
+    function burst(ox,oy){
+      var chars=['✦','✧','❀','♡','✿','★'], cols=['#FF8E72','#C7B5E8','#9FC9AE','#FCE3A0','#FFB8A0'];
+      for(var i=0;i<12;i++){
+        var s=document.createElement('span');
+        s.textContent=chars[i%chars.length];
+        var ang=(Math.PI*2*i)/12 + Math.random()*0.5, dist=55+Math.random()*48;
+        s.style.cssText='position:fixed;left:'+ox+'px;top:'+oy+'px;z-index:200;pointer-events:none;font-size:'+(12+Math.random()*12)+'px;color:'+cols[i%cols.length]+';transform:translate(-50%,-50%);transition:transform .85s cubic-bezier(.15,.7,.3,1),opacity .85s ease;';
+        document.body.appendChild(s);
+        (function(s,ang,dist){ requestAnimationFrame(function(){ s.style.transform='translate(calc(-50% + '+(Math.cos(ang)*dist)+'px),calc(-50% + '+(Math.sin(ang)*dist)+'px)) rotate('+(Math.random()*360)+'deg) scale(.4)'; s.style.opacity='0'; }); })(s,ang,dist);
+        setTimeout((function(s){ return function(){ s.remove(); }; })(s), 900);
+      }
+    }
+    lumi.addEventListener('click', function(e){
+      e.stopPropagation();
+      burst(curX, curY);
+      if(body){ body.style.transform='scale(1.3)'; setTimeout(function(){ body.style.transform='scale(1)'; },200); }
+      setMenu(!menuOpen);
+    });
+    document.addEventListener('click', function(ev){ if(menuOpen && !wrap.contains(ev.target)) setMenu(false); });
+    window.addEventListener('scroll', function(){
+      var y=window.scrollY; scrollVel += (y-lastY); scrollVel=Math.max(-60,Math.min(60,scrollVel)); lastY=y;
+      if(menuOpen) setMenu(false);
+    }, { passive:true });
+  }
+
+  // ---------- zoom-to-fit: treat the page as a ~1280px artboard and scale it up to fill wider screens ----------
+  function applyZoom(){
+    var dw = 1440;
+    var z = window.innerWidth > dw ? window.innerWidth / dw : 1;
+    window.__zoom = z;
+    document.documentElement.style.zoom = z === 1 ? '' : String(z);
+    // 100vh renders as 100vh*zoom under CSS zoom; expose a zoom-compensated viewport height
+    document.documentElement.style.setProperty('--app-vh', (window.innerHeight / z) + 'px');
+  }
+
+  // ---------- boot ----------
+  applyZoom();
+  window.addEventListener('resize', applyZoom);
+  renderMain();
+  initLumi();
+})();
+</script>
+</body>
+</html>
